@@ -1,0 +1,18 @@
+﻿string NomeProfissional = "Bruno Programador";
+string Email = "bruno.prog@exemplo.com";
+int AnoNascimento = 2009;
+bool EstaDisponivel = true;
+
+Console.WriteLine("---Cartão de visitas digital---");
+Console.WriteLine($"Nome: {NomeProfissional}");
+Console.WriteLine($"Email: {Email}");
+Console.WriteLine($"Idade: {DateTime.Now.Year - AnoNascimento} anos");
+Console.WriteLine($"Status: {(EstaDisponivel ? "Disponível para projetos" : "Não disponível no momento")}" );
+
+EstaDisponivel = false;
+
+Console.WriteLine("\n---Status atualizado---");
+Console.WriteLine($"Nome: {NomeProfissional}");
+Console.WriteLine($"Email: {Email}");
+Console.WriteLine($"Idade: {DateTime.Now.Year - AnoNascimento} anos");
+Console.WriteLine($"Status: {(EstaDisponivel ? "Disponível para projetos" : "Não disponível no momento")}");

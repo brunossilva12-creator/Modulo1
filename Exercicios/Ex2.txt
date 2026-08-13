@@ -1,0 +1,11 @@
+﻿double PrecoItem1 = 12.50;
+double PrecoItem2 = 5.99;
+double PrecoItem3 = 20.00;
+double Soma = PrecoItem1 + PrecoItem2 + PrecoItem3;
+
+Console.WriteLine($"Preço Item 1: R$ {PrecoItem1}");
+Console.WriteLine($"Preço Item 2: R$ {PrecoItem2}");
+Console.WriteLine($"Preço Item 3: R$ {PrecoItem3}");
+Console.WriteLine()
+
+Console.WriteLine($"O valor total da compra é: {Soma:F2}");
