@@ -1,0 +1,24 @@
+int IdadeParticipante = 17;
+bool TemAutorizacaoPais = true;
+bool JaJogouAntes = false;
+
+Console.WriteLine($"Idade: {IdadeParticipante}");
+Console.WriteLine($"Tem autorização dos pais? {TemAutorizacaoPais}");
+Console.WriteLine($"Já jogou antes? {JaJogouAntes}");
+Console.WriteLine();
+
+bool IdadeVerificada = true;
+
+Console.WriteLine($"Maior o igual a 16? {IdadeVerificada}");
+Console.WriteLine($"Exatamente 17 anos? {IdadeParticipante}");
+Console.WriteLine();
+
+bool PodeJogar1 = true;
+bool PodeJogar2 = true;
+bool NaoPodeJogar = false;
+
+
+Console.WriteLine($"Pode jogar 1 (Idade >= 16 e Tem autorização) {PodeJogar1}");
+Console.WriteLine($"Pode jogar 2 (Idade >= 16 Ou já jogou antes) {PodeJogar2}");
+Console.WriteLine($"Não pode jogar (Não tem autorização) {NaoPodeJogar}");
+Console.ReadLine();

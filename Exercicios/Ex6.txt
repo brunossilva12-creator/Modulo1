@@ -1,0 +1,23 @@
+double Nota1 = 7.5;
+double Nota2 = 8.5;
+double Nota3 = 9.0;
+double Media = (Nota1 + Nota2 + Nota3)/3;
+int Frequencia = 75;
+bool Aprovado = true;
+bool Reprovado = false;
+
+Console.WriteLine($"Nota 1: {Nota1:F2}");
+Console.WriteLine($"Nota 2: {Nota2:F2}");
+Console.WriteLine($"Nota 3: {Nota3:F2}");
+Console.WriteLine($"Frequência: {Frequencia}%");
+Console.WriteLine();
+
+if(Media >= 7){
+    Console.WriteLine($"Média do Aluno: {Media:F2}");
+    Console.WriteLine($"Aluno Aprovado? {Aprovado}");
+}
+else{
+    Console.WriteLine($"Média do Aluno: {Media:F2}");
+    Console.WriteLine($"Aluno Aprovado? {Reprovado}");
+}
+Console.ReadLine();
