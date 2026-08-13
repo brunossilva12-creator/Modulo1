@@ -1,0 +1,32 @@
+﻿double NotaAluno = 8.5;
+
+if (NotaAluno >= 9.0)
+{
+    Console.WriteLine($"Nota: {NotaAluno}");
+    Console.WriteLine("Conceito: A");
+}
+
+else if (NotaAluno >= 8.0 && NotaAluno < 9.0)
+{
+    Console.WriteLine($"Nota: {NotaAluno}");
+    Console.WriteLine("Conceito: B");
+}
+
+else if (NotaAluno >= 7.0 && NotaAluno < 8.0)
+{
+    Console.WriteLine($"Nota: {NotaAluno}");
+    Console.WriteLine("Conceito: C");
+}
+
+else if (NotaAluno >= 6.0 && NotaAluno < 7.0)
+{
+    Console.WriteLine($"Nota: {NotaAluno}");
+    Console.WriteLine("Conceito: D");
+}
+
+else
+{
+    Console.WriteLine($"Nota: {NotaAluno}");
+    Console.WriteLine("Conceito: F");
+}
+Console.ReadLine();
