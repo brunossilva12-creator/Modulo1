@@ -1,4 +1,6 @@
-﻿private static void Main(string[] args)
+﻿internal class Program
+{
+    private static void Main(string[] args)
     {
         double PrecoProduto1 = 45.50;
         double PrecoProduto2 = 55.50;
