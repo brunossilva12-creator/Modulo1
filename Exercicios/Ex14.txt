@@ -1,0 +1,19 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        double N1 = 8.5;
+        double N2 = 7.0;
+        double N3 = 9.5;
+
+        double MediaFinal = MediaAritimetica(N1, N2, N3);
+        Console.WriteLine($"A média das notas é: {MediaFinal:F2}");
+
+        Console.ReadKey();
+    }
+    public static double MediaAritimetica(double Nota1, double Nota2, double Nota3)
+    {
+        double Media = (Nota1 + Nota2 + Nota3) / 3;
+        return Media;
+    }
+}

@@ -1,0 +1,35 @@
+﻿private static void Main(string[] args)
+    {
+        double PrecoProduto1 = 45.50;
+        double PrecoProduto2 = 55.50;
+        double ValorPromocional = 50.0;
+        double VerificadorPrecoPromocional = Verificador(PrecoProduto1, ValorPromocional);
+
+        if (PrecoProduto1 == VerificadorPrecoPromocional && PrecoProduto2 == VerificadorPrecoPromocional)
+        {
+            Console.WriteLine("Produto 1 e produto 2 Estão em promoção");
+        }
+
+        else if (PrecoProduto1 == VerificadorPrecoPromocional || PrecoProduto2 != VerificadorPrecoPromocional)
+        {
+            Console.WriteLine("Apenas o produto 1 Está em promoção");
+        }
+
+        else if (PrecoProduto2 == VerificadorPrecoPromocional || PrecoProduto1 != VerificadorPrecoPromocional)
+        {
+            Console.WriteLine("Apenas o produto 2 Está em promoção");
+        }
+
+        else
+        {
+            Console.WriteLine("Não estão em promoção");
+        }
+        Console.ReadKey();
+    }
+    public static double Verificador(double Produto1, double Valor)
+    {
+        double Verificacao = Produto1 - Valor;
+        return Verificacao;
+    }
+
+}

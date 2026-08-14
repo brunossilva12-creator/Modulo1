@@ -1,0 +1,12 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Saudacao();
+        Console.ReadKey();
+    }
+    public static void Saudacao()
+    {
+        Console.WriteLine("Olá, mundo da programação");
+    }
+}
