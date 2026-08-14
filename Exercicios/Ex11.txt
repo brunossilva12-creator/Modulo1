@@ -1,0 +1,15 @@
+﻿double TotalCompra = 0.0;
+char ContinuarComprando = 's';
+
+while (ContinuarComprando == 's')
+{
+    Console.WriteLine("Digite o preço do produto: ");
+    double precoItem = Convert.ToDouble(Console.ReadLine());
+
+    TotalCompra += precoItem;
+
+    Console.WriteLine("Deseja continuar comorando? s/n: ");
+    ContinuarComprando = Console.ReadLine().ToLower()[0];
+}
+
+Console.WriteLine($"O total da compra é de: R${TotalCompra:F2}");
